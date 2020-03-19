@@ -58,7 +58,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">986字</span>
+            <span class="post-count">1.2k字</span>
         </span>
     </span>
 
@@ -67,7 +67,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">3分钟</span>
+            <span class="post-count">4分钟</span>
         </span>
     </span>
 </div>
@@ -93,25 +93,35 @@
 
       
       <p><font font face="黑体" size=10>Hexo &amp; Github博客搭建教程</font></p>
-<p>##关键词</p>
+<p><font font face="黑体" size=6>关键词</font></p>
 <ul>
 <li>Hexo</li>
 <li>静态博客</li>
 <li>Github pages</li>
-<li>hexo theme（主题）<br>##步骤<br>###1.安装Node.js<br>下载地址-&gt;<a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node.js</a></li>
+<li>hexo theme（主题）</li>
 </ul>
+<p><font font face="黑体" size=6>步骤</font></p>
+<p><font font face="黑体" size=5>1.安装Node.js</font></p>
+<p>下载地址-&gt;<a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node.js</a></p>
 <p>安装完成后，按win+R打开命令符，输入node -v和npm -v，如果能出现版本号，就说明你安装成功啦。</p>
-<p><a href="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/node.PNG" target="_blank" rel="noopener">安装成功node</a><br>###2.Git与GitHub<br>Git-&gt;<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">下载地址</a></p>
-<p>安装完成后，安装完成后，按win+R打开命令符，输入git –version，如果能出现版本号，就说明你安装成功啦。</p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/node.PNG" alt="安装成功node"></p>
+<p><font font face="黑体" size=5>2.Git与GitHub</font></p>
+<p>Git-&gt;<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">下载地址</a></p>
+<p>安装完成后，安装完成后，按win+R打开命令符，输入git –version，如果能出现版本号，就说明你安装成功啦。<br><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/git.PNG" alt="git安装"></p>
 <p>下载完Git，你当然还需要一个GitHub账号（记得去注册哟），用来存放网站.</p>
-<p><font face="黑体" color='green'  size=5>···Github新建博客仓库···</font></p>
-<p>！<a href="">新建仓库0</a></p>
-<p>！<a href="">新建仓库1</a></p>
+<center><font face="黑体" color='green'  size=5>···Github新建博客仓库···</font></center>
+
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE0.png" alt="新建仓库0"></p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="新建仓库1"></p>
 <p>注意：仓库名必须是GitHub的用户名+github.io！！！</p>
+<center><font face="黑体" color='green'  size=5>···Github Pages···</font></center>
+
 <p>项目建成后，点击Settings，向下拉到最后有个GitHub Pages，点击Choose a theme选择一个你喜欢的主题，再回到GitHub Pages。点击链接就可以看到你刚才选择的那个主题啦。</p>
-<p><img src="" alt="githubpages0"></p>
-<p><img src="" alt="githubpages1"></p>
-<p>###3.安装Hexo<br>在电脑合适的位置新建一个文件夹存放网站，本文中将其取名为blog<br>在文件夹根目录下右键，找到git bash here,依次输入如下指令</p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/GitHubpages01.png" alt="githubpages1"></p>
+<p>注意：是新建项目的settings哦!</p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/GitHubpages.png" alt="githubpages0"></p>
+<p><font font face="黑体" size=5>3.安装Hexo</font></p>
+<p>在电脑合适的位置新建一个文件夹存放网站，本文中将其取名为blog<br>在文件夹根目录下右键，找到git bash here,依次输入如下指令</p>
 <p><code>npm i hexo-cli -g    #-g表示全局安装</code></p>
 <p><code>hexo -v    #验证是否安装成功</code></p>
 <p><code>hexo -init    #初始化</code></p>
@@ -120,49 +130,65 @@
 <p><code>hexo generate   #生成静态网页</code></p>
 <p><code>hexo server   #在本地服务器运行</code></p>
 <p>执行完最后一步，会返回一个网址（默认端口号是4000），用浏览器打开，如果出现下图的页面，就说明你成功了一半，如果你不喜欢这个主题，后面part将会讲到如何更换主题↓↓↓</p>
-<p><img src="" alt="原始网站图片"></p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98.png" alt="默认主题"></p>
 <p><font face="黑体" color=red size=6>详情可查看<a href="https://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next文档</a>！！!</font></p>
 <p>本地搭建好后，下面我们需要</p>
-<p><font face="黑体" color='green'  size=5>···Github与本地连接···</font></p>
+<center><font face="黑体" color='green'  size=5>···Github与本地连接···</font></center>
+
 <p><code>git config --global user.name &quot;zhaojiaj&quot;</code>    “ “内的账号为刚才GitHub注册的帐号名字</p>
 <p><code>git config --global user.email &quot;1165465022@qq.com&quot;</code>    “ “内的邮箱为刚才GitHub注册的帐号邮箱</p>
-<p><font face="黑体" color='green' size=5>···生成密钥SSH key设置到Github···</font></p>
+<center><font face="黑体" color='green' size=5>···生成密钥SSH key设置到Github···</font></center>
+
 <p><code>cd ~/.ssh</code></p>
 <p><code>ssh-keygen -t rsa -C &quot;1165465022@qq.com&quot;</code></p>
 <p>连续三个回车，你会得到以下三个文件</p>
-<p>！<a href="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/ssh.PNG" target="_blank" rel="noopener">.ssh</a></p>
-<p>找到文件夹C:\Users\lenvo.ssh(地址可能有所不同)生成的文件，用记事本打开***.pub的文件，复制内容到GitHub-&gt;settings-&gt;ssh and gpg key-&gt;new ssh sky中<br><img src="" alt="sshkey0"><br><img src="" alt="sshkey1"></p>
-<p><font face="黑体" color='green' size=5>···本地配置···</font></p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/ssh.PNG" alt=".ssh"></p>
+<p>找到文件夹C:\Users\lenvo.ssh(地址可能有所不同)生成的文件，用记事本打开***.pub的文件，复制内容到GitHub-&gt;settings-&gt;ssh and gpg key-&gt;new ssh sky中（记得要新建一个ssh key哦，名字可以随便起）<br><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/ssh%20key0.png" alt="sshkey0"></p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/ssh%20key.png" alt="sshkey1"></p>
+<center><font face="黑体" color='green' size=5>···本地配置···</font></center>
+
 <p>找到blog文件夹下_config.yml，用sublime打开(记事本也可)</p>
-<p><img src="" alt="config"></p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/config.png" alt="config"></p>
 <p>按照如下修改，repository修改为你自己的github项目地址</p>
-<p><img src="" alt="项目地址"></p>
-<p><img src="" alt="config1"></p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80.png" alt="项目地址"></p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/config1.png" alt="config1"></p>
 <p><font face="黑体" color='red' size=4>记住repository冒号后面要有个空格，不然会报错！！！</font></p>
-<p><font face="黑体" color='green' size=5>···用Git上传···</font></p>
+<center><font face="黑体" color='green' size=5>···用Git上传···</font></center>
+
 <p>根目录下输入右击git bash here</p>
 <p><code>hexo g</code>生成静态网页</p>
 <p><code>hexo s</code>预览本地效果</p>
 <p><code>hexo d</code>上传到github上</p>
-<p>或者直接输入<code>hexo g -d</code>作用就是部署、上传,一键操作。这几个命令是常用命令，以后写完博客或者更新配置后都会用到 </p>
-<p>如果出现让你登陆的页面，就说明配置成功啦！</p>
-<p><img src="" alt="配置成功"></p>
+<p>或者直接输入<code>hexo g -d</code>作用就是部署、上传,一键操作。</p>
+<p><font face="黑体" color='red' size=4>注：这几个命令是常用命令，以后写完博客或者更新配置后都会用到<br></font></p>
+<p>配好后，如果出现让你登陆的页面，就说明配置成功啦！</p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E9%85%8D%E7%BD%AE%E6%88%90%E5%8A%9F.png" alt="配置成功"></p>
 <p>这时打开你的 ****.github.io主页就能看到前面提到的hexo默认的主题啦</p>
-<p><font face="黑体" color='green'  size=5>···上传文章···</font></p>
+<center><font face="黑体" color='green'  size=5>···上传文章···</font></center>
+
 <p>在根目录blog文件夹下右击git bash here</p>
 <p><code>hexo new &quot;文件名&quot;</code></p>
-<p>在_posts中会有新建的文章，用markdownpad打开编辑即可。<br><img src="" alt="新建文章"></p>
+<p>在_posts中会有新建的文章，用markdownpad2打开编辑即可。(一般默认自动新建文章名字为hello-world.md）</p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E6%96%87%E6%A1%A3.png" alt="新建文章"></p>
+<p>左边编辑文章内容，右边可以同步展示效果。</p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91.png" alt="文档编辑"></p>
 <font face="黑体" color='red' size=5>
-如果打开md文件时如果报错，那是HTML渲染错误。
+如果第一次下载markdownpad2打开md文件时可能报错，那是HTML渲染错误。
 
 <p>因为缺少了组件，安装Awesomium 1.6.6 SDK即可</font></p>
 <p><code>http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe</code></p>
 <p>文章编辑好后，再次回到根目录下git bash here</p>
 <p><code>hexo g -d      #部署上传</code> 再次打开主页就可以看到你写的文章啦</p>
-<p>###4.Hexo theme</p>
+<p><font font face="黑体" size=5>4.Hexo theme</font></p>
 <p>官网有许多主题的源码你可以下载到自己的电脑上，下载地址-&gt;<a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo主题</a></p>
-<p>下面就介绍一下切换主题的方法：。。。。。。。。（待完善）</p>
-<p>但是，如果你有强大的前端基础或者对前端感兴趣，也可以尝试自己写一个主题，参考<a href="https://hexo.io/zh-cn/docs/templates.html" target="_blank" rel="noopener">hexo模板</a></p>
+<p>下面就介绍一下切换主题的方法：</p>
+<p>首先从上面的链接进入hexo theme主页</p>
+<p><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/theme.png" alt="theme"></p>
+<p>然后选择一套你喜欢的主题进入作者主题的GitHub仓库，下载主题的压缩包<br><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E4%B8%BB%E9%A2%98%E4%BB%A3%E7%A0%81%E5%BA%93.png" alt="主题代码库"></p>
+<p>把下载的到本地的压缩包解压，把解压文件夹的名字改成简短的，复制粘贴到blog/theme下<br><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/clone%E5%88%B0blog.png" alt="clone到blog"></p>
+<p>接下来一步修改配置，_config.yml文件下拉到最底下，把theme后主题的名字改成你刚才clone到blog/theme中主题的名字<br><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98.png" alt="修改主题"></p>
+<p>最后，配置上传主题就修改成功啦！<br><img src="https://raw.githubusercontent.com/zhaojiaj/markdownphotos/master/%E6%88%90%E5%8A%9F.png" alt="成功"></p>
+<p>&lt;font face=”黑体”size=5&gt;但是，如果你有强大的前端基础或者对前端感兴趣，也可以尝试自己写一个主题，参考<a href="https://hexo.io/zh-cn/docs/templates.html" target="_blank" rel="noopener">hexo模板</a></font></p>
 
       
       <!-- reward -->
