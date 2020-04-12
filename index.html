@@ -122,6 +122,32 @@
 <p><font font face="黑体" size=5>Linux</font></p>
 <p>Charles具有APT和YUM的存储库，如果您具有基于Debian或基于Red Hat的Linux发行版，则这是安装Charles的首选方式。</p>
 <p>否则，将tar.gz归档文件解压到一个合适的位置。如果你之前已经安装过Charles并且正在执行更新操作；首先确保Charles不在运行状态，然后在以前安装的头文件进行安装或者复制。通过运行bin/Charles脚本开启Charles。</p>
+<p><font font face="黑体" size=5>开始使用</font></p>
+<p>请查看开始使用指导（下一部分）来开始使用Charles！</p>
+<p><font font face="黑体" size=4 color="blue">APT存储库</font></p>
+<p>Charles有一个用于基于Debian的Linux发行版的ATP存储库。</p>
+<p>注：为了利用更大的密钥和更强的汇编，，回购协议的密钥已于2016.7.26发生了改变。ATP存储库中已经出现的用户需要导入新的公共密钥。新的公共密钥和旧的公共密钥在同一个URL地址，因此重复下面的apt-key添加步骤来添加它。最后运行apt-get update来运行新的密钥。</p>
+<p>首先为存储库安装GPG公共密钥，因此你可以确认这个软件包是否签名正确。<br>现在的公钥id是AD28806并且它的指纹是4BA7 DB85 7B57 0089 7420  96E1 5F16 B97C 1AD2 8806:</p>
+<p><code>wget -q -O - https://www.charlesproxy.com/packages/apt/PublicKey | sudo apt-key add -</code></p>
+<p>或者可替换为：</p>
+<p><code>sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1AD28806</code></p>
+<p>然后把存储库安装到你的资源中：</p>
+<p><code>sudo sh -c &#39;echo deb https://www.charlesproxy.com/packages/apt/ charles-proxy main &gt; /etc/apt/sources.list.d/charles.list&#39;</code></p>
+<p>然后更新你的源代码并且安装Charles：</p>
+<p><code>sudo apt-get update</code><br><code>sudo apt-get install charles-proxy</code></p>
+<p>这个包在/user/bin中创建了一个“charles”命令，并且把Charles添加到 窗口管理器的应用程序菜单中。</p>
+<p>你也可能安装Charles的一个被称为charles代理测试版的测试轨道。</p>
+<p><font font face="黑体" size=3 color="blue">APT存储库</font></p>
+<p>使用charles-proxy3的安装包来安装Charles 3。你可以同时安装Charles 4和Charles 3。</p>
+<p>这个包在/user/bin中创建了一个“charles3”命令，并且把Charles添加到窗口管理器的应用程序菜单中。</p>
+<p><font font face="黑体" size=4 color="blue">YUM存储库</font></p>
+<p>Charles有一个用于基于Red Hat的Linux发行版的YUM仓库。</p>
+<p><code>cat &lt;&lt;EOF &gt; /etc/yum.repos.d/Charles.repo</code><br><code>[charlesproxy]name=Charles Proxy Repository</code><br><code>baseurl=https://www.charlesproxy.com/packages/yum</code><br><code>gpgkey=https://www.charlesproxy.com/packages/yum/PublicKey</code><br><code>EOF</code></p>
+<p>然后安装Charles：</p>
+<p><code>sudo yum install charles-proxy</code></p>
+<p>这个包在/user/bin中创建了一个“charles”命令，并且把Charles添加到窗口管理器的应用程序菜单中。</p>
+<p>你也可能安装Charles的一个被称为charles代理测试版的测试轨道。</p>
+<p>（注：charles-proxy-beta、charles-proxy-beta、Red Hat、Red Hat需了解）</p>
 
       
       <!-- reward -->
