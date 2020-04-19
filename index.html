@@ -113,19 +113,13 @@
 <h2 id="欢迎使用"><a href="#欢迎使用" class="headerlink" title="欢迎使用"></a><font font face="黑体" size=6>欢迎使用</font></h2><p>欢迎来到Charles。这个文档是个一个正在进行中的工作。如果你在这没有找到你的答案，请联系我们。</p>
 <p>Charles目标是成为一个潜入软件。开启这个软件，，它会尝试自动配置你的浏览器，所以你能马上准备好并且开始运行。开始浏览web并且查看再Charles中返回的结果；点击他们并且观察被记录了什么。</p>
 <p>如果要继续阅读，请看右边的目录列表部分。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a><font font face="黑体" size=6>安装</font></h2><p><font font face="黑体" size=5>安装Charles</font></p>
-<p>首先下载Charles，下载地址-&gt;<a href="https://www.charlesproxy.com/download/latest-release/" target="_blank" rel="noopener">charles</a>.如果你使用Firework，请同时下载Firework插件。</p>
-<p><font font face="黑体" size=5>Windows</font></p>
-<p>运行安装程序，把Charles安装在你的程序菜单中。</p>
-<p><font font face="黑体" size=5>Mac OS X</font></p>
-<p>双击下载文件，将其解压缩，然后复制Charles应用程序复制到到你的应用程序文件夹中。</p>
-<p><font font face="黑体" size=5>Linux</font></p>
-<p>Charles具有APT和YUM的存储库，如果您具有基于Debian或基于Red Hat的Linux发行版，则这是安装Charles的首选方式。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a><font font face="黑体" size=6>安装</font></h2><h2 id="安装Charles"><a href="#安装Charles" class="headerlink" title="安装Charles"></a><font font face="黑体" size=5>安装Charles</font></h2><p>首先下载Charles，下载地址-&gt;<a href="https://www.charlesproxy.com/download/latest-release/" target="_blank" rel="noopener">charles</a>.如果你使用Firework，请同时下载Firework插件。</p>
+<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a><font font face="黑体" size=5>Windows</font></h2><p>运行安装程序，把Charles安装在你的程序菜单中。</p>
+<h2 id="Mac-OS-X"><a href="#Mac-OS-X" class="headerlink" title="Mac OS X"></a><font font face="黑体" size=5>Mac OS X</font></h2><p>双击下载文件，将其解压缩，然后复制Charles应用程序复制到到你的应用程序文件夹中。</p>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a><font font face="黑体" size=5>Linux</font></h2><p>Charles具有APT和YUM的存储库，如果您具有基于Debian或基于Red Hat的Linux发行版，则这是安装Charles的首选方式。</p>
 <p>否则，将tar.gz归档文件解压到一个合适的位置。如果你之前已经安装过Charles并且正在执行更新操作；首先确保Charles不在运行状态，然后在以前安装的头文件进行安装或者复制。通过运行bin/Charles脚本开启Charles。</p>
-<p><font font face="黑体" size=5>开始使用</font></p>
-<p>请查看开始使用指导（下一部分）来开始使用Charles！</p>
-<p><font font face="黑体" size=4 color="blue">APT存储库</font></p>
-<p>Charles有一个用于基于Debian的Linux发行版的ATP存储库。</p>
+<h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a><font font face="黑体" size=5>开始使用</font></h2><p>请查看开始使用指导（下一部分）来开始使用Charles！</p>
+<h2 id="APT存储库"><a href="#APT存储库" class="headerlink" title="APT存储库"></a><font font face="黑体" size=4>APT存储库</font></h2><p>Charles有一个用于基于Debian的Linux发行版的ATP存储库。</p>
 <p>注：为了利用更大的密钥和更强的汇编，，回购协议的密钥已于2016.7.26发生了改变。ATP存储库中已经出现的用户需要导入新的公共密钥。新的公共密钥和旧的公共密钥在同一个URL地址，因此重复下面的apt-key添加步骤来添加它。最后运行apt-get update来运行新的密钥。</p>
 <p>首先为存储库安装GPG公共密钥，因此你可以确认这个软件包是否签名正确。<br>现在的公钥id是AD28806并且它的指纹是4BA7 DB85 7B57 0089 7420  96E1 5F16 B97C 1AD2 8806:</p>
 <p><code>wget -q -O - https://www.charlesproxy.com/packages/apt/PublicKey | sudo apt-key add -</code></p>
@@ -140,15 +134,22 @@
 <p><font font face="黑体" size=3 color="blue">APT存储库</font></p>
 <p>使用charles-proxy3的安装包来安装Charles 3。你可以同时安装Charles 4和Charles 3。</p>
 <p>这个包在/user/bin中创建了一个“charles3”命令，并且把Charles添加到窗口管理器的应用程序菜单中。</p>
-<p><font font face="黑体" size=4 color="blue">YUM存储库</font></p>
-<p>Charles有一个用于基于Red Hat的Linux发行版的YUM仓库。</p>
+<h2 id="YUM存储库"><a href="#YUM存储库" class="headerlink" title="YUM存储库"></a><font font face="黑体" size=4>YUM存储库</font></h2><p>Charles有一个用于基于Red Hat的Linux发行版的YUM仓库。</p>
 <p><code>cat &lt;&lt;EOF &gt; /etc/yum.repos.d/Charles.repo</code><br><code>[charlesproxy]name=Charles Proxy Repository</code><br><code>baseurl=https://www.charlesproxy.com/packages/yum</code><br><code>gpgkey=https://www.charlesproxy.com/packages/yum/PublicKey</code><br><code>EOF</code></p>
 <p>然后安装Charles：</p>
 <p><code>sudo yum install charles-proxy</code></p>
 <p>这个包在/user/bin中创建了一个“charles”命令，并且把Charles添加到窗口管理器的应用程序菜单中。</p>
 <p>你也可能安装Charles的一个被称为charles代理测试版的测试轨道。</p>
-<p>（注：charles-proxy-beta、charles-proxy-beta、Red Hat、Red Hat需了解）</p>
-
+<p><font font face="黑体" size=4 color="red">（注：charles-proxy-beta、charles-proxy-beta、Red Hat、Red Hat需了解）</font></p>
+<h2 id="准备开始"><a href="#准备开始" class="headerlink" title="准备开始"></a><font font face="黑体" size=6>准备开始</font></h2><p>学习怎样使用Charles和它可以怎样帮助你最好的办法是安装它并且观察他是怎样工作的。如果你还没有准备好请看上方安装的部分。</p>
+<h2 id="开始使用Charles"><a href="#开始使用Charles" class="headerlink" title="开始使用Charles"></a><font font face="黑体" size=5>开始使用Charles</font></h2><p>通过你的“开始”菜单、“应用程序”文件夹或者任何你安装Charles的地方运行该应用程序来启动Charles。</p>
+<p>如果你已经安装了Firefox，你将会被询问一个关于<a href="https://www.charlesproxy.com/documentation/configuration/browser-and-system-configuration/" target="_blank" rel="noopener">Firefox附加组件</a>的问题。这个让你告诉Charles你是否已经安装了<a href="https://www.charlesproxy.com/documentation/configuration/browser-and-system-configuration/" target="_blank" rel="noopener">Firefox附加组件</a>或者没有安装。</p>
+<p>在Mac OS X上你将被会问到一个关于你的<a href="https://www.charlesproxy.com/documentation/configuration/browser-and-system-configuration/" target="_blank" rel="noopener">Mac OS X代理设置</a>的问题。为了能够在Mac OS X自动配置你的代理设置你需要通过输入密码来授予Charles权限。</p>
+<p>你可以对这两个问题回答“还没有（Not Yet)”，稍后完成后你将获得开始使用Charles的机会。</p>
+<h2 id="第一印象"><a href="#第一印象" class="headerlink" title="第一印象"></a><font font face="黑体" size=5>第一印象</font></h2><p>你最先看到的东西是一个未命题的会话。如果你的代理设置已经被自动配置，你现在应该可以使用你的web浏览器并且观察已经被记录在Charles中的事件。</p>
+<p>你会看到你所访问的每一个网站/主机的节点都显示在左边的树中。探索这棵树。点击某一个已经被记录的事件，你会在正文（body）中看到详细信息（可能仅仅在响应的选项卡上，除非你正在执行POST），并且你会看到正在传输的数据。</p>
+<p>这是你可以用Charles做的最简单、最普通的事。它具有强大的功能，因为你可以看到正在传输和接收的每一个内容——它使你可以深入了解实际发生的事情。</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a><font font face="黑体" size=6>配置</font></h2>
       
       <!-- reward -->
       
